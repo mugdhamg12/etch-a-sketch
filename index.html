@@ -13,7 +13,35 @@
 	  	<button class="button" id="new-grid" onclick = "newGrid()">
 	  		<span>CHANGE GRID </span>
 	  	</button>
+        <div id="text-box">
+            <p> Tap on grid and hover mouse around to start painting. Tap again to stop</p>
+        </div>
 	</div>
+
+<div class="radio-toolbar" id = "color-options">
+    <input type="radio" id="radioRandom" name="radioColors" value="random" checked>
+    <label for="radioRandom">Random</label>
+
+    <input type="radio" id="radioWarm" name="radioColors" value="warm">
+    <label for="radioWarm">Warm</label>
+
+    <input type="radio" id="radioCool" name="radioColors" value="cool">
+    <label for="radioCool">Cool</label>
+
+    <input type="radio" id="radioGray" name="radioColors" value="gray">
+    <label for="radioGray">Grayscale</label>
+
+    <input type="radio" id="radioErase" name="radioColors" value="erase">
+    <label for="radioErase">Erase</label>
+
+
+    <input type="radio" type ="color" id="radioSelect" name="radioColors" value="select">
+    <label for="radioSelect">Select Color:</label>
+
+    <input type="color" id="color-picker" value="#000000">
+</div>
+
+
 </body>
 <script src="script.js"></script>
 </html>
